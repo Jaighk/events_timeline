@@ -47,7 +47,7 @@ def generate_timeline(df: pd.DataFrame, timeline: dict[str, str], filename: str)
     # --- Plot total events
     total = by_action_15m.sum(axis=1)
     ax.plot(total.index, total.values, color="#6c6c6c", alpha=0.5, linewidth=1.2, label="Total")
-    ax.set_title(f"{filename}: Logons per {timeline['interval']} Minutes by Action", pad=10)
+    ax.set_title(f"{filename}: {timeline['interval']} Minutes by Action", pad=10)
     ax.set_ylabel("Count")
     ax.xaxis.set_major_locator(mdates.AutoDateLocator(minticks=6, maxticks=12))
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %d %H:%M"))

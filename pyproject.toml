@@ -1,5 +1,5 @@
 [project]
-name = "data-summarizer"
+name = "events-timeline"
 version = "0.1.0"
 description = "A utility that ingests reports from various text-based raw-data formats such as logs, processes them, and returns a summary of the report"
 readme = "README.md"
