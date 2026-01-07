@@ -15,7 +15,7 @@ pipx install logviz*.whl
 # Run
 
 ```bash
-$> logviz -h
+$ logviz -h
 usage: logviz [-h] -f [FILES ...] [-t TIMELINE TIMELINE TIMELINE] [-b BAR BAR] [-o OUTPUT_DIRECTORY]
 
 A utility that processes reports from plain text formats such as csv and returns summary visualizations of the file
@@ -39,14 +39,14 @@ options:
 ### Timelines
 
 ```bash
-$> logviz -f log_file.csv --timeline timestamp 15 event_type
+$ logviz -f log_file.csv --timeline timestamp 15 event_type
 [-] Working: log_file.csv
 [✓] Data from file: log_file.csv processed
 [-] Generating timeline: log_file
 [✓] Plot saved: ./plots/timeline_log_file
 [✓] Plot generation complete
 [✓] Plots saved at: {current directory}/plots
-$> tree
+$ tree
 .
 ├── log_file.csv
 └── plots
