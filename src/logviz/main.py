@@ -63,7 +63,6 @@ def main() -> None:
                     save_file=save_file
                 )
             if args["bar"]:
-                cprint(f"{args['bar'] = }")
                 save_file = {
                     "name": os.path.basename(file).split(sep=".")[0],
                     "graph_type": 'bar'
